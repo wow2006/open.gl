@@ -27,7 +27,7 @@ sudo apt-get install libglfw3-dev
 sudo apt-get install libglew-dev
 sudo apt-get install libglm-dev
 sudo apt-get install libsoil-dev
-sudo apt-get install cmake-qt-gui
+sudo apt-get install cmake
 ```
 
 OpenGL Docs
