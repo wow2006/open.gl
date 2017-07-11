@@ -1,4 +1,4 @@
-project(TransformFeedbackBasic)
+project(GeometryRectangles)
 
 add_executable(${PROJECT_NAME} main.cpp)
 target_include_directories(${PROJECT_NAME} PUBLIC ${GLFW3_INCLUDE_PATH} ${OPENGL_INCLUDE_DIR} ${GLEW_INCLUDE_DIRS})

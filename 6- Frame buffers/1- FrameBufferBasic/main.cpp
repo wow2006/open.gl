@@ -184,8 +184,7 @@ void specifyScreenVertexAttributes(GLuint shaderProgram)
 	glVertexAttribPointer(texAttrib, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(GLfloat), (void*)(2 * sizeof(GLfloat)));
 }
 
-int
-main(){
+int main(){
 	auto t_start = std::chrono::high_resolution_clock::now();
 	// Initialize GLFW3
 	glfwInit();
