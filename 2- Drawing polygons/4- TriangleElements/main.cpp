@@ -1,8 +1,6 @@
 #define GLEW_STATIC
-#include <GL\glew.h>
+#include <GL/glew.h>
 #include <GLFW/glfw3.h>
-
-#include <chrono>
 
 // Shader sources
 const GLchar* vertexSource =
@@ -24,7 +22,6 @@ const GLchar* fragmentSource =
 
 int
 main(){
-	auto t_start = std::chrono::high_resolution_clock::now();
 	// Initialize GLFW3
 	glfwInit();
 	// Set Version to OpenGL 4.5 Core Profile
@@ -53,9 +50,9 @@ main(){
 	glGenBuffers(1, &vbo);
 
 	GLfloat vertices[] = {
-		-0.5f, 0.5f, 1.0f, 0.0f, 0.0f, // Top-left
-		0.5f, 0.5f, 0.0f, 1.0f, 0.0f, // Top-right
-		0.5f, -0.5f, 0.0f, 0.0f, 1.0f, // Bottom-right
+		-0.5f, 0.5f,  1.0f, 0.0f, 0.0f, // Top-left
+		0.5f,  0.5f,  0.0f, 1.0f, 0.0f, // Top-right
+		0.5f,  -0.5f, 0.0f, 0.0f, 1.0f, // Bottom-right
 		-0.5f, -0.5f, 1.0f, 1.0f, 1.0f  // Bottom-left
 	};
 

@@ -1,7 +1,8 @@
 #define GLEW_STATIC
-#include <GL\glew.h>
+#include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
+#include <cmath>
 #include <chrono>
 
 // Shader sources
@@ -91,7 +92,7 @@ main(){
 		auto t_now = std::chrono::high_resolution_clock::now();
 		float time = std::chrono::duration_cast<std::chrono::duration<float>>(t_now - t_start).count();
 
-		glUniform3f(uniColor, (sin(time * 4.0f) + 1.0f) / 2.0f, 0.0f, 0.0f);
+		glUniform3f(uniColor, (sinf(time * 4.0f) + 1.0f) / 2.0f, 0.0f, 0.0f);
 
 		// Clear the screen to black
 		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
